@@ -63,7 +63,7 @@ from tensorflow.keras.layers import Dense
 auth.authenticate_user()
 creds, _ = default()
 gc = gspread.authorize(creds)
-worksheet = gc.open('StudentsData').sheet1
+worksheet = gc.open('ex1').sheet1
 rows = worksheet.get_all_values()
 df = pd.DataFrame(rows[1:], columns=rows[0])
 df = df.astype({'INPUT':'float'})
@@ -110,22 +110,24 @@ model.predict(X_n1_1 value)
 ~~~
 
 ## Dataset Information
-![262069281-1d023f8c-2198-4abc-9c59-d978eed0f0dd](https://github.com/Sucharithachowdary/basic-nn-model/assets/94166007/b1c75067-9cbc-49a6-a1b4-7da3afb20b0f)
+<img width="154" alt="image" src="https://github.com/Sucharithachowdary/basic-nn-model/assets/94166007/ed4d22be-7d6e-4d88-8ab6-28cda0c8373c">
+
 
 
 ## OUTPUT
 
 ### Training Loss Vs Iteration Plot
 
-![262072687-2b673fa3-8798-46a9-96e5-a909ee93b891](https://github.com/Sucharithachowdary/basic-nn-model/assets/94166007/4aef49fc-3529-49e5-bade-a790cfef5fa2)
+<img width="353" alt="image" src="https://github.com/Sucharithachowdary/basic-nn-model/assets/94166007/c27ffb86-4839-4984-b877-53861c86d574">
 
 
 ### Test Data Root Mean Squared Error
-![262072465-43e38082-b4c1-4e4c-b48a-003e3e86a077](https://github.com/Sucharithachowdary/basic-nn-model/assets/94166007/c917b268-7f5f-4c27-b81c-86125d3fb059)
+<img width="344" alt="image" src="https://github.com/Sucharithachowdary/basic-nn-model/assets/94166007/76aea237-0d51-4b13-98c2-3c7978b12bc9">
 
 
 ### New Sample Data Prediction
-![262072825-be42d87e-ede4-4077-848e-03f61e176a12](https://github.com/Sucharithachowdary/basic-nn-model/assets/94166007/bc87b5ff-1f26-4d7e-ad38-338a8c4071b7)
+<img width="248" alt="image" src="https://github.com/Sucharithachowdary/basic-nn-model/assets/94166007/f4dda452-137f-46e5-bdef-67d2902cb568">
+
 
 
 ## RESULT
