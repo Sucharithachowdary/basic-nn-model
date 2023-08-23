@@ -12,7 +12,7 @@ In this basic NN Model, we have used "relu" activation function in input and hid
 ## Neural Network Model
 
 ![output](?raw=true)
-## DESIGN STEPS
+## DESIGN STEPS 
 
 ### STEP 1:
 
